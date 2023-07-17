@@ -3,3 +3,6 @@ from django.http import HttpResponse
 
 def home(request):
     return render(request, 'home.html', {'name': 'Jerry'})
+
+def add(request):
+    return render(request, 'result.html')
