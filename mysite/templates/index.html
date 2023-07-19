@@ -18,6 +18,7 @@
     <div class="main">
         <div class="container">
             <div class="signup-content">
+              
                 <form method="POST" id="signup-form" class="signup-form">
                     <h2>{{Hello.name}}</h2>
                     <p class="desc">to get discount 10% when pre - order <span>“{{Hello.description}}”</span></p>
@@ -31,6 +32,12 @@
                         <input type="text" class="form-input" name="password" id="password" placeholder="Password"/>
                         <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                     </div>
+                    {% if Hello.offer %}
+                    <div>
+                        
+                        <h1>Special Offer</h1>
+                    </div>
+                    {% endif %}
                     <div class="form-group">
                         <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                         <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in {{dest1.name}} <a href="#" class="term-service">Terms of service</a></label>
@@ -40,6 +47,7 @@
                         <a href="#" class="submit-link submit">Sign in</a>
                     </div>
                 </form>
+             
             </div>
         </div>
 

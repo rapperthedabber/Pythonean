@@ -6,3 +6,4 @@ class Destination:
     name: str
     description: str
     price: int
+    offer: bool
